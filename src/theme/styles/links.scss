@@ -1,0 +1,42 @@
+a.link {
+  font-family: $body-text-family;
+  color: #000000;
+
+  .link__text {
+    border: 0 none;
+  }
+
+  &_secondary {
+    @include fonts($size-small, $font-family-secondary);
+    color: #979797;
+  }
+
+  &_third {
+    @include fonts($size-small, $font-family-secondary);
+    color: #000000;
+  }
+
+  &_fourth {
+    @include fonts($size-xxs, $font-family-base);
+    text-decoration: underline;
+    color: blue;
+  }
+
+}
+a.link:hover {
+  color: #000000;
+}
+a.link:active {
+  color: #29266a;
+}
+
+.footer_wrapper a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer_wrapper a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer_wrapper a:active {
+  color: rgba(255, 255, 255, 0.5);
+}

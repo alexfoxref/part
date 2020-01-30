@@ -1,0 +1,167 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $text-color;
+  line-height: $body-line-height;
+  @include fonts($size-default, $body-text-family);
+}
+
+.header, .footer, .section {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 138px 12px 120px;
+
+  @include respond-to(medium, $type: max) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include respond-to(mobile) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.section {
+  padding-top: 16px;
+  padding-bottom: 36px;
+  &_fullwidth {
+    padding: 12px 0 12px 0
+  }
+  &_top {
+    padding: 0
+  }
+  &_home_carousel {
+    padding-top: 0;
+  }
+  &_profile {
+    padding-bottom: 0;
+  }
+}
+
+.hr2orange {
+  border: none;
+  color: #FC8A15;
+  background-color: #FC8A15;
+  height: 2px;
+}
+.hr1blue {
+  border: none;
+  color: #75A3FD;
+  background-color: #75A3FD;
+  height: 1px;
+ }
+
+@media (min-width: 320px) {
+  .grid-row_gutter-mobile-s_16 {
+    FONT-VARIANT: JIS04;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.section.breadcrumbs {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+
+.footer_wrapper {
+  margin-top: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #38af23;
+  color: white;
+}
+
+.breadcrumb li {
+  margin-bottom: 15px;
+}
+.breadcrumb li {
+  display: inline-block;
+  color: #000000;
+  font-weight: 600;
+}
+.breadcrumb li a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  color: #979797;
+  text-decoration: none;
+}
+.oval {
+  width: 6px;
+  height: 6px;
+  margin: 0 9px 2px 9px;
+}
+
+.medicalServise-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.11;
+  float: left;
+  margin-bottom: 16px;
+}
+.chevron {
+  float: right;
+}
+.medicalService-announce {
+  clear: both;
+  width: 95%;
+  margin-bottom: 10px;
+}
+.medicalService-wrap {
+  border: solid 1px #b4b4b4;
+  padding: 18px;
+  margin-bottom: 18px;
+  min-height: 52px;
+}
+.medicalService h3{
+  margin: 9px 0 12px;
+}
+.ul-orange {
+  margin-left: 15px;
+  list-style-image: url(../../theme/images/oval1.svg);
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.ul-without {
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.price-medicalServise {
+  font-size: 22px;
+  font-weight: 600;
+}
+.bold18 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+.signup-wrap {
+  margin: 64px 0 54px;;
+  background: url(../../theme/images/form-singup.svg) right bottom no-repeat #ffdd83;
+}
+.form-signup {
+  width: 600px;
+  padding: 32px 0 32px 137px;
+}
+.form-title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+hr {
+  border: 1px solid #FC8A15;
+}

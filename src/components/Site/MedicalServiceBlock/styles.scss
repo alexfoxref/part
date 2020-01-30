@@ -1,0 +1,52 @@
+@import '../../../theme/styles/settings';
+
+.medicalService_block {
+  margin-bottom: 30px;
+  &>.plate__content {
+    min-height: 500px;
+  }
+}
+
+.medicalService_descr, .medicalService_descr p {
+  font-size: 12px;
+}
+
+.medicalService_descr {
+  position: relative;
+  &-wrap {
+    padding: 16px;
+    min-height: calc(100%-150px);
+  }
+  &-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    line-height: 1.33;
+  }
+  &-subject {
+    font-weight: 600;
+    color: #979797;
+    margin: 10px 0 3px 0;
+  }
+  &-descr {
+    @include fonts($size-xs, $font-family-secondary);
+    font-weight: 600;
+    margin-top: 3px;
+  }
+}
+
+.medicalService-image {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+.button-cntr {
+  margin-bottom: 28px;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+
