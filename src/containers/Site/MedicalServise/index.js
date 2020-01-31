@@ -5,7 +5,7 @@ import GridCol from 'arui-feather/grid-col';
 import GridRow from 'arui-feather/grid-row';
 import { NavLink } from 'react-router-dom';
 import Breadcrumbs from '../../../components/Common/Breadcrumbs';
-import RequestForm from '../../../components/Site/Forms/RequestForm';
+// import RequestForm from '../../../components/Site/Forms/RequestForm';
 import Specialist from '../../../theme/images/Lada/Гилибранд Лариса Аркадьевна.jpg';
 import Footer from '../../../components/Common/Footer';
 import { medicalServiseBreadcrumbs } from '../../../core/utils/testData';
@@ -84,9 +84,9 @@ export default function MedicalServise() {
           </GridCol>
         </GridRow>
       </section>
-      <section className="section section_fullwidth">
+      {/* <section className="section section_fullwidth">
         <RequestForm formType="medicalServise"/>
-      </section>
+      </section> */}
       <Footer/>
     </>
   );

@@ -4,8 +4,6 @@ import GridCol from 'arui-feather/grid-col';
 import Button from 'arui-feather/button';
 import Input from 'arui-feather/input';
 import PhoneInput from 'arui-feather/phone-input';
-import CheckBox from 'arui-feather/checkbox';
-import Link from 'arui-feather/link';
 import './styles.scss';
 import { doctors } from '../../../../core/utils/testData';
 import * as moment from 'moment';
@@ -133,7 +131,7 @@ export default class RequestForm extends React.Component {
 
             {!this.state.fioSent && <form onSubmit={handleSubmit} className="form-request">
               <h2>Укажите свои данные для заявки</h2>
-                <GridRow>
+                <GridRow justify="center">
                   <GridCol width={{ mobile: 12, tablet: 6, desktop: 6 }} className="form-field">
                     <label htmlFor="name" className="info-group-label">ФИО</label>
                     <Input
@@ -149,7 +147,7 @@ export default class RequestForm extends React.Component {
                     />
                   </GridCol>
                 </GridRow>
-                <GridRow>
+                <GridRow justify="center">
                   <GridCol width={{ mobile: 12, tablet: 6, desktop: 6 }} className="form-field">
                     <label htmlFor="phone" className="info-group-label">Телефон</label>
                     <PhoneInput
@@ -167,7 +165,7 @@ export default class RequestForm extends React.Component {
                   </GridCol>
                 </GridRow>
 
-              <Button type="submit" onClick={() => this.setState({ fioSent: !this.state.fioSent })} className={values.formType === 'specialist' ? 'button button_secondary' : 'button button_default'} disabled={isSubmitting}>
+              <Button type="submit" onClick={() => this.setState({ fioSent: !this.state.fioSent })} className='button button_default' disabled={isSubmitting}>
                 Отправить заявку
               </Button>
             </form>}

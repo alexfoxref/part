@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './theme/styles/styles.scss';
-import Specialist from './containers/Site/Specialist';
+import RequestPage from './containers/Site/RequestPage';
 
 
-ReactDOM.render(<Specialist />, document.getElementById('root'));
+ReactDOM.render(<RequestPage />, document.getElementById('root'));

@@ -8,7 +8,7 @@ import Breadcrumbs from '../../../components/Common/Breadcrumbs';
 import SpecialistServices from '../../../components/Site/SpecialistServices';
 import SpecialistImg from '../../../theme/images/Ladushki/Горбицкая Марина Сергеевна.jpg';
 import HowWork from '../../../components/Site/HowWork';
-import RequestForm from '../../../components/Site/Forms/RequestForm';
+// import RequestForm from '../../../components/Site/Forms/RequestForm';
 import Footer from '../../../components/Common/Footer';
 import { specialistBreadcrumbs } from '../../../core/utils/testData';
 import './styles.scss';
@@ -98,9 +98,9 @@ class Specialist extends React.Component {
         <section className="section">
           <HowWork />
         </section>
-        <section className="section section_fullwidth">
+        {/* <section className="section section_fullwidth">
           <RequestForm formType="specialist" />
-        </section>
+        </section> */}
         <Footer />
       </>
     );
