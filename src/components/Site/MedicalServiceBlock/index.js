@@ -12,7 +12,7 @@ export default function MedicalServiceBlock({ medicalService }) {
   return (
     <Plate className="medicalService_block">
       <div className="medicalService_skills">
-        <NavLink className="link link_third" to="/medicalService"><img className="medicalService-image" src={medicalService.photo} alt="мед услуга" /></NavLink>
+        <NavLink className="link link_third" to="/medicalServise"><img className="medicalService-image" src={medicalService.photo} alt="мед услуга" /></NavLink>
         <div className="medicalService_descr-wrap">
           <h3 className="medicalService_descr-name">
             {medicalService.title}
@@ -22,7 +22,7 @@ export default function MedicalServiceBlock({ medicalService }) {
           <p className="medicalService_descr-subject">Описание</p>
           <p className="medicalService_descr-descr">{medicalService.descr}</p>
         </div>
-        <NavLink className="link link_third" to="/medicalService">
+        <NavLink className="link link_third" to="/medicalServise">
           <div className="button-cntr">
             <Button className="button button_default">Записаться</Button>
           </div>

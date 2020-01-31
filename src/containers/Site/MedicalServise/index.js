@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import Breadcrumbs from '../../../components/Common/Breadcrumbs';
 // import RequestForm from '../../../components/Site/Forms/RequestForm';
 import Specialist from '../../../theme/images/Lada/Гилибранд Лариса Аркадьевна.jpg';
-import Footer from '../../../components/Common/Footer';
+// import Footer from '../../../components/Common/Footer';
 import { medicalServiseBreadcrumbs } from '../../../core/utils/testData';
 import './styles.scss';
 
@@ -36,9 +36,11 @@ export default function MedicalServise() {
                 <p><strong>Часы приема:</strong> каждый будний день с 10 до 15 </p>
                 <p><strong>Принимают:</strong> Главный врач МЦ "ЛадаМед", Врач высшей категории, Врач ультразвуковой диагностики</p>
               </div>
+              <NavLink className="link link_third" to="/request">
               <div className="medicalServise-btn">
                 <Button className="button button_default">Записаться</Button>
               </div>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -75,7 +77,7 @@ export default function MedicalServise() {
                 Сведения об образовании: Ижевская государственная медициснкая академия, гд окончания 1985
  
                 Обучение, КПК: Московская мед. академия им. И.М. Сеченова, Кировская гос. мед.академия, ГОУ ДПО СПБ МАПО Росздрава,  ГБОУ ВПО ИГМА (г.Ижевск), ГБОУ ВПО СГМУ (г.Архангельск), Ростовский НИИ акушерства и педиатрии, Педиатрическая мед. академия (г.Санкт-Петербург), Научный центр им. А.Н. Бакулева РАМН (г.Москва), ГАУЗ "Межрегиональный КДЦ" (г.Казань), ГБОУ ДПО "Казанская мед.академия"</p>
-              <NavLink className="link link_third" to="/specialist">
+              <NavLink className="link link_third" to="/request">
               <div className="specialist-button">
                 <Button className="button button_secondary">Записаться</Button>
               </div>
@@ -87,7 +89,7 @@ export default function MedicalServise() {
       {/* <section className="section section_fullwidth">
         <RequestForm formType="medicalServise"/>
       </section> */}
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

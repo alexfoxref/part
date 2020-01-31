@@ -5,10 +5,11 @@ import GridCol from 'arui-feather/grid-col';
 import Button from 'arui-feather/button';
 import Popup from 'arui-feather/popup';
 import Link from 'arui-feather/link';
+import { NavLink } from 'react-router-dom';
 import Breadcrumbs from '../../../components/Common/Breadcrumbs';
 import MedicalServiceBlock from '../../../components/Site/MedicalServiceBlock';
 import ChevronBottom2 from '../../../theme/images/chevronBottom2.svg';
-import Footer from '../../../components/Common/Footer';
+// import Footer from '../../../components/Common/Footer';
 import { medicalServices, medicalServicesBreadcrumbs } from '../../../core/utils/testData';
 import './styles.scss';
 
@@ -70,7 +71,9 @@ class MedicalServices extends React.Component {
                     <li>Эхокардиография</li>
                     <li>Приём детей</li>
                   </ul>
-                  <Link pseudo>Подробнее...</Link>
+                  <NavLink to="/" pseudo="true">
+                     Подробнее...
+                  </NavLink>
                 </div>
               </Popup>
 
@@ -82,11 +85,13 @@ class MedicalServices extends React.Component {
                 </GridCol>
               ))}
             </GridRow>
-            <div className="button-center">
-              <Button className="button button_secondary">Выбрать</Button>
-            </div>
+            <NavLink to="/medicalServise">
+              <div className="button-center">
+                <Button className="button button_secondary">Выбрать</Button>
+              </div>
+            </NavLink>
           </section>
-          <Footer />
+          {/* <Footer /> */}
         </>
       );
     }

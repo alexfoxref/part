@@ -26,14 +26,6 @@ import Photo24 from '../../theme/images/Ladushki/Тихонова Елена А�
 import Photo25 from '../../theme/images/Ladushki/Цыцарева Юлия Владимировна.png';
 
 
-
-
-
-
-// import Banner1 from '../../theme/images/home-banner.png';
-// import Banner2 from '../../theme/images/home-banner2.png';
-// import Bannersuccess2 from '../../theme/images/account/bannersuccess2.svg';
-
 export const specialists = [
   {
     title: 'Мизина Татьяна Валериевна',
@@ -124,7 +116,7 @@ export const specialistBreadcrumbs = [
   },
   {
     title: 'Горбицкая Марина Сергеевна',
-    link: ''
+    link: '/specialist'
   },
 ];
 
@@ -180,7 +172,7 @@ export const medicalServicesBreadcrumbs = [
   },
   {
     title: 'Все услуги',
-    link: ''
+    link: '/'
   },
 ];
 
@@ -191,173 +183,13 @@ export const medicalServiseBreadcrumbs = [
   },
   {
     title: 'УЗИ',
-    link: '/MedicalServises'
+    link: '/'
   },
   {
     title: 'УЗИ органов малого таза',
-    link: ''
+    link: '/'
   },
 ];
-
-// export const studentBreadcrumbs = [
-//   {
-//     title: 'Профиль',
-//     link: '/courses'
-//   },
-//   {
-//     title: 'Студент',
-//     link: '/courses'
-//   },
-//   {
-//     title: 'Денежных Екатерина',
-//     link: ''
-//   },
-// ];
-
-// export const myteacherBreadcrumbs = [
-//   {
-//     title: 'Профиль',
-//     link: '/courses'
-//   },
-//   {
-//     title: 'Преподаватель',
-//     link: '/teacher'
-//   },
-//   {
-//     title: 'Барышева Светлана Валентиновна',
-//     link: ''
-//   },
-// ];
-
-// export const myheadteacherBreadcrumbs = [
-//   {
-//     title: 'Профиль',
-//     link: '/courses'
-//   },
-//   {
-//     title: 'завуч',
-//     link: '/teacher'
-//   },
-//   {
-//     title: 'Барышева Светлана Валентиновна',
-//     link: ''
-//   },
-// ];
-// export const myprocreation = [
-//   {
-//     title: 'Профиль',
-//     link: '/courses'
-//   },
-//   {
-//     title: 'Создание расписания  PRO',
-//     link: ''
-//   },
-// ];
-
-
-// export const carousel = [
-//   {
-//     id: 1,
-//     title: 'Учись с удовольствием!',
-//     txt: 'С ОБРАЗОВАТЕЛЬНОЙ ПЛАТФОРМОЙ «МОЕ ОБРАЗОВАНИЕ»',
-//     img: Banner1,
-//   },
-//   {
-//     id: 2,
-//     title: 'Высшее образование online',
-//     txt: 'ПОЛУЧИТЬ НОВУЮ ПРОФЕССИЮ ИЛИ РАСШИРИТЬ СВОИ ЗНАНИЯ - ПРОСТО ВЫБЕРИТЕ ПОДХОДЯЩИЙ ВАМ ВУЗ, НАЧНИТЕ ОБУЧЕНИЕ И ПОЛУЧИТЕ ЭЛЕКТРОННЫЙ ДИПЛОМ ',
-//     img: Banner2,
-//   },
-// ];
-
-// export const carouselstudent = [
-//   {
-//     id: 1,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 2,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 3,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 4,
-//     img: Bannersuccess2,
-//   },
-// ];
-
-// export const mycourseBreadcrumbs = [
-//   {
-//     title: 'Личный кабинет',
-//     link: '/'
-//   },
-//   {
-//     title: 'Преподаватель',
-//     link: '/courses'
-//   },
-//   {
-//     title: 'Барышева Светлана Валентиновна',
-//     link: ''
-//   },
-// ];
-
-// export const files = [
-//   {
-//     id: 1,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 2,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 3,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 4,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 5,
-//     img: Bannersuccess2,
-//   },
-//   {
-//     id: 6,
-//     img: Bannersuccess2,
-//   },
-// ];
-// export const myteacher1Breadcrumbs = [
-//   {
-//     title: 'Личный кабинет',
-//     link: '/my/teacher'
-//   },
-//   {
-//     title: 'Преподаватель',
-//     link: '/teacher'
-//   },
-//   {
-//     title: 'Барышева Светлана Валентиновна',
-//     link: ''
-//   },
-// ];
-// export const mystudent1Breadcrumbs = [
-//   {
-//     title: 'Личный кабинет',
-//     link: '/my/student'
-//   },
-//   {
-//     title: 'Ученик',
-//     link: '/student'
-//   },
-//   {
-//     title: 'Денежных Екатерина',
-//     link: ''
-//   },
-// ];
 
 export const doctors = [
   {id: 0, name: 'Иван Иавнов', specialisation: 'терапевт'},

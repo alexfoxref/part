@@ -4,11 +4,12 @@ import GridRow from 'arui-feather/grid-row';
 import GridCol from 'arui-feather/grid-col';
 import Button from 'arui-feather/button';
 import Popup from 'arui-feather/popup';
-import Link from 'arui-feather/link';
+import { NavLink } from 'react-router-dom';
+// import Link from 'arui-feather/link';
 import Breadcrumbs from '../../../components/Common/Breadcrumbs';
 import SpecialistBlock from '../../../components/Site/SpecialistBlock';
 import ChevronBottom2 from '../../../theme/images/chevronBottom2.svg';
-import Footer from '../../../components/Common/Footer';
+// import Footer from '../../../components/Common/Footer';
 import { specialists, specialistsBreadcrumbs } from '../../../core/utils/testData';
 import './styles.scss';
 
@@ -69,7 +70,7 @@ export default class Specialists extends React.Component {
                     <li>Эхокардиография</li>
                     <li>Приём детей</li>
                   </ul>
-                  <Link pseudo>Подробнее...</Link>
+                  <NavLink to="/" pseudo="true">Подробнее...</NavLink>
                 </div>
               </Popup>
           </div>
@@ -84,7 +85,7 @@ export default class Specialists extends React.Component {
             <Button className="button button_secondary">Показать ещё</Button>
           </div>
         </section>
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   }

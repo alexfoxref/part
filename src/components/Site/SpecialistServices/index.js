@@ -4,6 +4,7 @@ import GridRow from 'arui-feather/grid-row';
 import GridCol from 'arui-feather/grid-col';
 import Button from 'arui-feather/button';
 import ExpansionPanel from '../../Common/ExpansionPanel';
+import { NavLink } from 'react-router-dom';
 import './styles.scss';
 
 /**
@@ -61,9 +62,11 @@ const SpecialistServices = ({ items = [] }) => {
                 <h3 className="specialistc-h3">Адрес филиала</h3>
                 <div className="price-course">Каширское шоссе 31</div>
                 <div className="specialistc-button">
-                  <Button variant="contained" className="button button_default">
-                    Записаться
-                  </Button>
+                  <NavLink to='/request'>
+                    <Button variant="contained" className="button button_default">
+                      Записаться
+                    </Button>
+                  </NavLink>
                 </div>
               </GridCol>
             </GridRow>

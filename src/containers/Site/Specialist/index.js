@@ -4,12 +4,13 @@ import GridCol from 'arui-feather/grid-col';
 import GridRow from 'arui-feather/grid-row';
 import Button from 'arui-feather/button';
 import Popup from 'arui-feather/popup';
+import { NavLink } from 'react-router-dom';
 import Breadcrumbs from '../../../components/Common/Breadcrumbs';
 import SpecialistServices from '../../../components/Site/SpecialistServices';
 import SpecialistImg from '../../../theme/images/Ladushki/Горбицкая Марина Сергеевна.jpg';
 import HowWork from '../../../components/Site/HowWork';
 // import RequestForm from '../../../components/Site/Forms/RequestForm';
-import Footer from '../../../components/Common/Footer';
+// import Footer from '../../../components/Common/Footer';
 import { specialistBreadcrumbs } from '../../../core/utils/testData';
 import './styles.scss';
 
@@ -71,9 +72,11 @@ class Specialist extends React.Component {
                       </div>
                     </Popup>
                   </div>
-                  <div className="specialist-button">
-                    <Button className="button button_default">Записаться</Button>
-                  </div>
+                  <NavLink to="/request">
+                    <div className="specialist-button">
+                      <Button className="button button_default">Записаться</Button>
+                    </div>
+                  </NavLink>
                 </div>
               </GridCol>
             </GridRow>
@@ -101,7 +104,7 @@ class Specialist extends React.Component {
         {/* <section className="section section_fullwidth">
           <RequestForm formType="specialist" />
         </section> */}
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   }
