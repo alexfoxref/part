@@ -165,7 +165,7 @@ export default class RequestForm extends React.Component {
                   </GridCol>
                 </GridRow>
 
-              <Button type="submit" onClick={() => this.setState({ fioSent: !this.state.fioSent })} className='button button_default' disabled={isSubmitting}>
+              <Button type="submit" className='button button_default' disabled={isSubmitting}>
                 Отправить заявку
               </Button>
             </form>}
